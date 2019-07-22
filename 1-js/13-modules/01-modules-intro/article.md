@@ -4,7 +4,7 @@
 As our application grows bigger, we want to split it into multiple files, so called 'modules'.
 A module usually contains a class or a library of useful functions.
 
-For a long time, JavaScript existed without a language-level module syntax. That wasn't a problem, because initially scripts were small and simple. So there was no need.
+For a long time, JavaScript existed without a language-level module syntax. That wasn't a problem, because initially scripts were small and simple, so there was no need.
 
 But eventually scripts became more and more complex, so the community invented a variety of ways to organize code into modules, special libraries to load modules on demand.
 
@@ -296,7 +296,7 @@ There are two notable differences of external module scripts:
     <script type="module" src="my.js"></script>
     ```
 
-2. External scripts that are fetched from another domain require [CORS](mdn:Web/HTTP/CORS) headers. In other words, if a module script is fetched from another domain, the remote server must supply a header `Access-Control-Allow-Origin: *` (may use fetching domain instead of `*`) to indicate that the fetch is allowed.
+2. External scripts that are fetched from another origin (e.g. another site) require [CORS](mdn:Web/HTTP/CORS) headers, as described in the chapter <info:fetch-crossorigin>. In other words, if a module script is fetched from another origin, the remote server must supply a header `Access-Control-Allow-Origin: *` (may use site domain instead of `*`) to indicate that the fetch is allowed.
     ```html
     <!-- another-site.com must supply Access-Control-Allow-Origin -->
     <!-- otherwise, the script won't execute -->
