@@ -4,7 +4,7 @@ Imagine that you're a top singer, and fans ask day and night for your upcoming s
 
 To get some relief, you promise to send it to them when it's published. You give your fans a list to which they can subscribe for updates. They can fill in their email addresses, so that when the song becomes available, all subscribed parties instantly receive it. And even if something goes very wrong, say, if plans to publish the song are cancelled, they will still be notified.
 
-Everyone is happy, because the people don't crowd you any more, and fans, because they won't miss the single.
+Everyone is happy, because the people don't crowd you anymore, and fans, because they won't miss the single.
 
 This is a real-life analogy for things we often have in programming:
 
@@ -38,7 +38,7 @@ When the executor finishes the job, it should call one of the functions that it 
     - sets `state` to `"rejected"`,
     - sets `result` to `error`.
 
-![](promise-resolve-reject.png)
+![](promise-resolve-reject.svg)
 
 Later we'll see how these changes become known to "fans".
 
@@ -60,7 +60,7 @@ We can see two things by running the code above:
 
 After one second of "processing" the executor calls `resolve("done")` to produce the result:
 
-![](promise-resolve-1.png)
+![](promise-resolve-1.svg)
 
 That was an example of a successful job completion, a "fulfilled promise".
 
@@ -73,7 +73,7 @@ let promise = new Promise(function(resolve, reject) {
 });
 ```
 
-![](promise-reject-1.png)
+![](promise-reject-1.svg)
 
 To summarize, the executor should do a job (something that takes time usually) and then call `resolve` or `reject` to change the state of the corresponding Promise object.
 
@@ -218,7 +218,7 @@ Just like there's a `finally` clause in a regular `try {...} catch {...}`, there
 
 The call `.finally(f)` is similar to `.then(f, f)` in the sense that it always runs when the promise is settled: be it resolve or reject.
 
-`finally` is a good handler for performing cleanup, e.g. stopping our loading indicators, as they are not needed any more, no matter what the outcome is.
+`finally` is a good handler for performing cleanup, e.g. stopping our loading indicators, as they are not needed anymore, no matter what the outcome is.
 
 Like this:
 
