@@ -12,7 +12,7 @@ Scripts are provided and executed as plain text. They don't need special prepara
 
 In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
 
-```smart header="Why <u>Java</u>Script?"
+```smart header="Why is it called <u>Java</u>Script?"
 When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
 
 But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
@@ -92,8 +92,7 @@ JavaScript is the only browser technology that combines these three things.
 
 That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
 
-While planning to learn a new technology, it's beneficial to check its perspectives. So let's move on to the modern trends affecting it,  including new languages and browser abilities.
-
+That said, JavaScript also allows to create servers, mobile applications, etc.
 
 ## Languages "over" JavaScript
 
@@ -109,9 +108,10 @@ Examples of such languages:
 
 - [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
 - [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
-- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps). It was initially offered by Google as a replacement for JavaScript, but as of now, browsers require it to be transpiled to JavaScript just like the ones above.
+- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
 
-There are more. Of course, even if we use one of these languages, we should also know JavaScript to really understand what we're doing.
+There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we're doing.
 
 ## Summary
 
