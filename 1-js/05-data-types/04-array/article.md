@@ -123,7 +123,7 @@ For stacks, the latest pushed item is received first, that's also called LIFO (L
 
 Arrays in JavaScript can work both as a queue and as a stack. They allow you to add/remove elements both to/from the beginning or the end.
 
-In computer science the data structure that allows it is called [deque](https://en.wikipedia.org/wiki/Double-ended_queue).
+In computer science the data structure that allows this, is called [deque](https://en.wikipedia.org/wiki/Double-ended_queue).
 
 **Methods that work with the end of the array:**
 
@@ -156,7 +156,7 @@ In computer science the data structure that allows it is called [deque](https://
 `shift`
 : Extracts the first element of the array and returns it:
 
-    ```js
+    ```js run
     let fruits = ["Apple", "Orange", "Pear"];
 
     alert( fruits.shift() ); // remove Apple and alert it
@@ -167,7 +167,7 @@ In computer science the data structure that allows it is called [deque](https://
 `unshift`
 : Add the element to the beginning of the array:
 
-    ```js
+    ```js run
     let fruits = ["Orange", "Pear"];
 
     fruits.unshift('Apple');
@@ -394,7 +394,7 @@ let matrix = [
   [7, 8, 9]
 ];
 
-alert( matrix[1][1] ); // the central element
+alert( matrix[1][1] ); // 5, the central element
 ```
 
 ## toString
@@ -453,7 +453,7 @@ We can use an array as a deque with the following operations:
 - `push(...items)` adds `items` to the end.
 - `pop()` removes the element from the end and returns it.
 - `shift()` removes the element from the beginning and returns it.
-- `unshift(...items)` adds items to the beginning.
+- `unshift(...items)` adds `items` to the beginning.
 
 To loop over the elements of the array:
   - `for (let i=0; i<arr.length; i++)` -- works fastest, old-browser-compatible.
