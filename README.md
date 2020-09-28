@@ -113,6 +113,7 @@ Some files, usually tasks, have YAML metadata at the top, delimited by `---`:
 importance: 5
 
 ---
+<<<<<<< HEAD
 ...
 ```
 
@@ -133,3 +134,7 @@ Please don't translate or remove the `[#...]` part, it's for URL anchors.
 You can run the tutorial server locally to see how the translation looks.
 
 The server and install instructions are at <https://github.com/javascript-tutorial/server>. 
+=======
+♥  
+Ilya Kantor @iliakan
+>>>>>>> f489145731a45df6e369a3c063e52250f3f0061d
